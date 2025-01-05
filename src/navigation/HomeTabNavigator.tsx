@@ -1,22 +1,30 @@
-import {getTabBarIcon} from '@components';
+import {getTabBarButton, getTabBarIcon} from '@components';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {HomeScreen, SearchScreen, SettingScreen, SurahScreen} from '@screens';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 const Tab = createBottomTabNavigator();
+const BAR_HEIGHT = 56;
 
 export const HomeTabNavigator = () => {
+  const insets = useSafeAreaInsets();
+  const barHeightWithInset = BAR_HEIGHT + insets.bottom;
+
   return (
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: '#b91c1c',
         tabBarStyle: {
-          minHeight: 56,
+          height: barHeightWithInset,
+        },
+        tabBarItemStyle: {
+          height: BAR_HEIGHT,
         },
         tabBarLabelStyle: {
           fontSize: 12,
-          marginTop: 2,
         },
+        tabBarButton: getTabBarButton,
       }}>
       <Tab.Screen
         options={{
