@@ -12,6 +12,7 @@ export const HomeTabNavigator = () => {
 
   return (
     <Tab.Navigator
+      initialRouteName="Surah"
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: '#b91c1c',

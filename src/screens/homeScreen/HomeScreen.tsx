@@ -1,12 +1,12 @@
 import {Text, View} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 export const HomeScreen = () => {
+  const insets = useSafeAreaInsets();
+
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Home Screens</Text>
-      </View>
-    </SafeAreaView>
+    <View style={{paddingTop: insets.top}}>
+      <Text>Home Screens</Text>
+    </View>
   );
 };
