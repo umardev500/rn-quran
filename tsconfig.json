@@ -6,7 +6,9 @@
       "@components": ["./src/components/index"],
       "@screens": ["./src/screens/index"],
       "@navigation": ["./src/navigation/index"],
-      "@assets/*": ["./src/assets/*"]
+      "@assets/*": ["./src/assets/*"],
+      "@typed": ["./src/types/index"],
+      "@data/*": ["./src/data/*"]
     }
   }
 }

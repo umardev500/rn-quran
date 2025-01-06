@@ -1,5 +1,26 @@
-import {View} from 'react-native';
+import {Text, View} from 'react-native';
 
-export const SurahListing = () => {
-  return <View />;
+import {SuraData} from '@typed';
+
+export const SurahListing = ({item}: {item: SuraData}) => {
+  return (
+    <View className="shadow-md gap-2 px-4 py-3.5 bg-white mx-4 mb-2.5 rounded-xl flex-row justify-between items-center">
+      <View className="flex-row p-1 flex-1 items-center gap-4">
+        <Text className="text-base font-medium text-gray-800">
+          {item.index}.
+        </Text>
+        <View className="flex-1">
+          <Text className="text-base font-medium text-gray-800 font-roboto">
+            {item.tname}
+          </Text>
+          <Text className="text-sm text-gray-500 font-roboto" numberOfLines={1}>
+            {item.ename} - {item.ayas}
+          </Text>
+        </View>
+      </View>
+      <Text className="text-xl font-uthman font-semibold text-gray-800">
+        {item.name}
+      </Text>
+    </View>
+  );
 };

@@ -51,6 +51,10 @@
 	<array>
 		<string>mdi_rounded.ttf</string>
 		<string>mdi_rounded_filled.ttf</string>
+		<string>carroisgothicsc_regular.ttf</string>
+		<string>roboto_bold.ttf</string>
+		<string>roboto_medium.ttf</string>
+		<string>roboto_regular.ttf</string>
 	</array>
 </dict>
 </plist>

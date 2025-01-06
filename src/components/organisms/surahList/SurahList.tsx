@@ -1,18 +1,19 @@
-import {Text} from '@react-navigation/elements';
-import {FlashList} from '@shopify/flash-list';
-import {View} from 'react-native';
+import {SurahListing} from '@components';
+import {FlashList, ListRenderItem} from '@shopify/flash-list';
+import {SuraData} from '@typed';
+import {useCallback} from 'react';
 
-export const SurahList = () => {
-  const data = [{title: 'First item'}];
-  const renderItem = ({item}: {item: any}) => {
-    return (
-      <View>
-        <Text>{item.title}</Text>
-      </View>
-    );
-  };
+type SuarhListProps = {
+  data: SuraData[];
+};
+
+export const SurahList: React.FC<SuarhListProps> = ({data}) => {
+  const renderItem: ListRenderItem<SuraData> = useCallback(
+    ({item}) => <SurahListing item={item} />,
+    [],
+  );
 
   return (
-    <FlashList data={data} renderItem={renderItem} estimatedItemSize={4} />
+    <FlashList data={data} renderItem={renderItem} estimatedItemSize={114} />
   );
 };

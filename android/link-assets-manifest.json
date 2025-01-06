@@ -2,12 +2,28 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "src/assets/fonts/carroisgothicsc_regular.ttf",
+      "sha1": "5a48131d345b996b6c316d82a51b231d41e80d21"
+    },
+    {
       "path": "src/assets/fonts/mdi_rounded.ttf",
       "sha1": "4a4c4808590f30f0475e119c0818882b31a47ba2"
     },
     {
       "path": "src/assets/fonts/mdi_rounded_filled.ttf",
       "sha1": "827cba705532fe1e9294a2750fe02905a753eb4e"
+    },
+    {
+      "path": "src/assets/fonts/roboto_bold.ttf",
+      "sha1": "1e8baa650d943f2b78f1b77dbfe3ba1fb590e21a"
+    },
+    {
+      "path": "src/assets/fonts/roboto_medium.ttf",
+      "sha1": "0ee6b0bd5ff6fe30e4ef720a08e38656dc60985f"
+    },
+    {
+      "path": "src/assets/fonts/roboto_regular.ttf",
+      "sha1": "ce57fc6c6705cb20661ac325fac5d4598b6efbca"
     }
   ]
 }
