@@ -14,6 +14,6 @@ export const SurahList: React.FC<SuarhListProps> = ({data}) => {
   );
 
   return (
-    <FlashList data={data} renderItem={renderItem} estimatedItemSize={114} />
+    <FlashList data={data} renderItem={renderItem} estimatedItemSize={80} />
   );
 };
