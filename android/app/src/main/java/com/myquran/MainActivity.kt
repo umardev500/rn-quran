@@ -1,7 +1,9 @@
 package com.myquran
 
-import android.os.Bundle;
+import android.os.Bundle
+import android.graphics.Color
 import com.facebook.react.ReactActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.enableEdgeToEdge
 import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
@@ -10,8 +12,11 @@ import com.facebook.react.defaults.DefaultReactActivityDelegate
 class MainActivity : ReactActivity() {
   //react-native-screens override
   override fun onCreate(savedInstanceState: Bundle?) {
+    enableEdgeToEdge(
+      statusBarStyle = SystemBarStyle.light(Color.TRANSPARENT, Color.TRANSPARENT),
+      navigationBarStyle = SystemBarStyle.light(Color.TRANSPARENT, Color.TRANSPARENT),
+    )
     super.onCreate(null);
-    enableEdgeToEdge()
   }
 
   /**
