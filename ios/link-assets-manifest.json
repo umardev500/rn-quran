@@ -6,6 +6,10 @@
       "sha1": "5a48131d345b996b6c316d82a51b231d41e80d21"
     },
     {
+      "path": "src/assets/fonts/mdi_filled_v2.ttf",
+      "sha1": "1024658c53d9420fbbc72155fc61f7cab3ddafd8"
+    },
+    {
       "path": "src/assets/fonts/mdi_rounded.ttf",
       "sha1": "4a4c4808590f30f0475e119c0818882b31a47ba2"
     },

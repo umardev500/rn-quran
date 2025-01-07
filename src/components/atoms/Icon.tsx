@@ -6,6 +6,8 @@ const glyphMap = {
   home: 0xe88a,
   book5: 0xf53b,
   settings: 0xe8b8,
+  more_vert: 0xe5d4,
+  arrow_back: 0xe5c4,
 };
 
 export type GlyphName = keyof typeof glyphMap;
@@ -26,14 +28,14 @@ export const MSRounded = createIconSet(glyphMap, {
 interface MsRoundedAutoFillProps {
   name: GlyphName;
   focused: boolean;
-  color: string;
+  color?: string;
   size?: number;
 }
 
 export const MsRoundedAutoFill: React.FC<MsRoundedAutoFillProps> = ({
   name,
   focused,
-  color,
+  color = '#4b5563',
   size = 24,
 }) => {
   return focused ? (
