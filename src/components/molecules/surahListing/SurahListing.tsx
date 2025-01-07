@@ -11,7 +11,7 @@ type SurahListingProps = {
 export const SurahListing: React.FC<SurahListingProps> = ({item, onPress}) => {
   const handlePress = useCallback(() => {
     onPress && onPress(item.index);
-  }, []);
+  }, [item]);
 
   return (
     <TouchableOpacity
