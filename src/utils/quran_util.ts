@@ -23,10 +23,12 @@ export const copyQuranAssetsToDocuments = async () => {
  * @returns A promise that resolves with an array of Quran data.
  * @throws Throws an error if data fetching fails.
  */
-export const fetchQuranData = async (): Promise<Quran[]> => {
+export const fetchQuranData = async (sura: number): Promise<Quran[]> => {
   try {
     const db = NitroSQLite.open({name: 'quran.db'});
-    const quran = await db.executeAsync('SELECT * FROM quran_text LIMIT 1');
+    const quran = await db.executeAsync(
+      `SELECT * FROM quran_text WHERE sura = ${sura}`,
+    );
     const quranLen = quran.rows?.length || 0;
     const qurans: Quran[] = [];
 
