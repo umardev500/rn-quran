@@ -21,11 +21,11 @@ export const QuranListing: React.FC<QuranListingProps> = ({item}) => {
       </View>
 
       {/* Translation */}
-      <View className="flex-row gap-2 mt-2 pb-4">
-        <Text className="font-roboto text-base font-medium text-teal-700">
+      <View className="flex-row flex-1 gap-2 mt-2 pb-4">
+        <Text className="font-rc text-lg font-medium text-teal-700">
           {Number(item.aya)}.
         </Text>
-        <Text className="font-roboto text-base font-medium text-gray-700">
+        <Text className="font-rc flex-1 text-lg font-normal text-gray-700">
           Lorem ipsum dolor sit amet consectetur adipisi dolore iros
         </Text>
       </View>
