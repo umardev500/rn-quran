@@ -10,7 +10,7 @@ export const QuranListing: React.FC<QuranListingProps> = ({item}) => {
   const cleanedText = item.text.replace(/\u06DF/g, '');
 
   return (
-    <View className="px-4 py-4 border-b border-b-gray-200">
+    <View className="px-4 py-5 border-b border-b-gray-200">
       <View className="flex-1 flex-row justify-end py-2">
         {/* <Text className="font-roboto">{Number(item.index)}</Text> */}
         <Text className="text-3xl font-uthmanic_hafs text-right leading-[1.7]">
@@ -21,12 +21,12 @@ export const QuranListing: React.FC<QuranListingProps> = ({item}) => {
       </View>
 
       {/* Translation */}
-      <View className="flex-row flex-1 gap-2 mt-2 pb-4">
+      <View className="flex-row flex-1 gap-2 mt-2">
         <Text className="font-rc text-lg font-medium text-teal-700">
           {Number(item.aya)}.
         </Text>
         <Text className="font-rc flex-1 text-lg font-normal text-gray-700">
-          Lorem ipsum dolor sit amet consectetur adipisi dolore iros
+          {item.tr_text}
         </Text>
       </View>
     </View>

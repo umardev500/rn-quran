@@ -5,7 +5,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 export const ReadScreen = () => {
   const insets = useSafeAreaInsets();
-  const {loading, data} = useLoadQuran(2);
+  const {loading, data} = useLoadQuran(1);
 
   return (
     <View

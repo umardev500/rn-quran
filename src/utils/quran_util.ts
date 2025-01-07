@@ -24,11 +24,18 @@ export const copyQuranAssetsToDocuments = async () => {
  * @throws Throws an error if data fetching fails.
  */
 export const fetchQuranData = async (sura: number): Promise<Quran[]> => {
+  const trTable = 'id_translation';
+
   try {
     const db = NitroSQLite.open({name: 'quran.db'});
-    const quran = await db.executeAsync(
-      `SELECT * FROM quran_text WHERE sura = ${sura}`,
-    );
+    const query = `
+      SELECT qt.*, tr.text as tr_text 
+      FROM quran_text qt 
+      JOIN ${trTable} tr 
+      ON qt.sura = tr.sura AND qt.aya = tr.aya
+      WHERE qt.sura = ${sura}
+    `;
+    const quran = await db.executeAsync(query);
     const quranLen = quran.rows?.length || 0;
     const qurans: Quran[] = [];
 

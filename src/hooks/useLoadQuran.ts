@@ -16,6 +16,7 @@ export const useLoadQuran = (sura: number) => {
       const quranData = await fetchQuranData(sura);
       setData(quranData);
     } catch (error) {
+      console.error('Error loading Quran:', error);
       setErr(error as Error);
     } finally {
       setLoading(false);

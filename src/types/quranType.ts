@@ -3,4 +3,5 @@ export type Quran = {
   sura: number;
   aya: number;
   text: string;
+  tr_text: string;
 };

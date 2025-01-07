@@ -1,3 +1,11 @@
 {
-  "sqltools.useNodeRuntime": true
+  "sqltools.useNodeRuntime": true,
+  "sqltools.connections": [
+    {
+      "previewLimit": 10,
+      "driver": "SQLite",
+      "name": "sqlite",
+      "database": "${workspaceFolder:MyQuran}/src/assets/db/quran.db"
+    }
+  ]
 }
