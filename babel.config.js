@@ -12,6 +12,8 @@ module.exports = {
           '@navigation': './src/navigation',
           '@typed': './src/types',
           '@data': './src/data',
+          '@utils': './src/utils',
+          '@hooks': './src/hooks',
         },
       },
     ],

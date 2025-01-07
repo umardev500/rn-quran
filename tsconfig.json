@@ -8,7 +8,9 @@
       "@navigation": ["./src/navigation/index"],
       "@assets/*": ["./src/assets/*"],
       "@typed": ["./src/types/index"],
-      "@data/*": ["./src/data/*"]
+      "@data/*": ["./src/data/*"],
+      "@utils": ["./src/utils/index"],
+      "@hooks": ["./src/hooks/index"]
     }
   }
 }

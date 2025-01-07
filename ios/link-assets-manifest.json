@@ -24,6 +24,10 @@
     {
       "path": "src/assets/fonts/roboto_regular.ttf",
       "sha1": "ce57fc6c6705cb20661ac325fac5d4598b6efbca"
+    },
+    {
+      "path": "src/assets/db/quran.db",
+      "sha1": "283381d26de838083eeecd491be14697f476f216"
     }
   ]
 }
