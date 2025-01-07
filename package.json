@@ -46,6 +46,7 @@
     "babel-plugin-module-resolver": "^5.0.2",
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
+    "nitro-codegen": "^0.20.1",
     "prettier": "2.8.8",
     "react-test-renderer": "18.3.1",
     "typescript": "5.0.4"

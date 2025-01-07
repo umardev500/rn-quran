@@ -40,6 +40,7 @@ class MainApplication : Application(), ReactApplication {
     ReactFontManager.getInstance().addCustomFont(this, "Carrois Gothic SC", R.font.carroisgothicsc);
     ReactFontManager.getInstance().addCustomFont(this, "KFGQPC Uthmanic Script HAFS", R.font.uthmanic_hafs);
     ReactFontManager.getInstance().addCustomFont(this, "KFGQPC Sindhi Naskh Regular", R.font.sindhi_naskh);
+    ReactFontManager.getInstance().addCustomFont(this, " Roboto Condensed Regular", R.font.roboto_condensed);
     SoLoader.init(this, OpenSourceMergedSoMapping)
     if (BuildConfig.IS_NEW_ARCHITECTURE_ENABLED) {
       // If you opted-in for the New Architecture, we load the native entry point for this app.

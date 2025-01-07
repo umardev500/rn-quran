@@ -9,6 +9,7 @@ module.exports = {
         roboto: ['Roboto', 'sans-serif'],
         uthmanic_hafs: ['KFGQPC Uthmanic Script HAFS', 'sans-serif'],
         uthman: ['KFGQPC Sindhi Naskh Regular', 'sans-serif'],
+        rc: [' Roboto Condensed Regular', 'sans-serif'],
       },
     },
   },
