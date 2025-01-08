@@ -5,12 +5,12 @@ import {useCallback} from 'react';
 
 type SurahListingProps = {
   item: SuraData;
-  onPress?: (index: number) => void;
+  onPress?: (index: number, tname: string) => void;
 };
 
 export const SurahListing: React.FC<SurahListingProps> = ({item, onPress}) => {
   const handlePress = useCallback(() => {
-    onPress && onPress(item.index);
+    onPress && onPress(item.index, item.tname);
   }, [item]);
 
   return (

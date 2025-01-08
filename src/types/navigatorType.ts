@@ -1,6 +1,6 @@
 export type RootStackParamList = {
   HomeTabs: undefined;
-  Read: {sura: number; aya?: number};
+  Read: {sura: number; aya?: number; tname: string};
 };
 
 declare global {

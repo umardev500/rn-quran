@@ -11,8 +11,8 @@ type SuarhListProps = {
 export const SurahList: React.FC<SuarhListProps> = ({data}) => {
   const navigation = useNavigation();
 
-  const handlePress = useCallback((index: number) => {
-    navigation.navigate('Read', {sura: index});
+  const handlePress = useCallback((index: number, tname: string) => {
+    navigation.navigate('Read', {sura: index, tname});
   }, []);
 
   const renderItem: ListRenderItem<SuraData> = useCallback(
