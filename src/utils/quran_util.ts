@@ -13,6 +13,7 @@ export const copyQuranAssetsToDocuments = async () => {
 
   try {
     await copyFromAssets(srcPath, dstPath);
+    console.log('Quran database copied to documents directory');
   } catch (error) {
     throw new Error('Failed to copy Quran assets: ' + error);
   }

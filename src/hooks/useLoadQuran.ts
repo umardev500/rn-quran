@@ -1,6 +1,6 @@
 import {Quran} from '@typed';
+import {fetchQuranData} from '@utils';
 import {useCallback, useEffect, useState} from 'react';
-import {copyQuranAssetsToDocuments, fetchQuranData} from '@utils';
 
 export const useLoadQuran = (sura: number) => {
   const [loading, setLoading] = useState(true);
@@ -12,7 +12,6 @@ export const useLoadQuran = (sura: number) => {
     setErr(null); // Reset error before starting
 
     try {
-      await copyQuranAssetsToDocuments();
       const quranData = await fetchQuranData(sura);
       setData(quranData);
     } catch (error) {
