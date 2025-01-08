@@ -1,9 +1,9 @@
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import {HomeTabNavigator} from './HomeTabNavigator';
 import {ReadScreen} from '@screens';
 import {RootStackParamList} from '@typed';
 
-const Stack = createNativeStackNavigator<RootStackParamList>();
+const Stack = createStackNavigator<RootStackParamList>();
 
 export const AppNavigator = () => {
   return (
